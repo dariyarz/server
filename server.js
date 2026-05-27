@@ -7,8 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const BOT_TOKEN = 'TOKEN';
-const CHAT_ID = 'CHAT_ID';
+const BOT_TOKEN = '8602446244:AAFuwaWIKnEi1B-y0NdaCunzjZ0xcg2W44s';
+const CHAT_ID = '6704226487';
 
 app.post('/sell', async (req, res) => {
   try {
@@ -33,7 +33,7 @@ app.post('/sell', async (req, res) => {
     `;
 
     await axios.post(
-      `https://api.telegram.org/bot${8602446244:AAFuwaWIKnEi1B-y0NdaCunzjZ0xcg2W44s}/sendMessage`,
+      `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
       {
         chat_id: CHAT_ID,
         text,
